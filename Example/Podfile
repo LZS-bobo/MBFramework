@@ -1,0 +1,13 @@
+
+
+platform :ios, '8.0'
+
+target 'MBFramework_Example' do
+  pod 'MBFramework', :path => '../'
+
+  target 'MBFramework_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
